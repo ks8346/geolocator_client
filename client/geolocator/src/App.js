@@ -18,6 +18,7 @@ const App = () => {
       // const data = await response.json();
       setResponseData(response.data);
     } catch (error) {
+      setResponseData({"name":`${inputValue} not found`});
       console.error(error);
     }
   };
